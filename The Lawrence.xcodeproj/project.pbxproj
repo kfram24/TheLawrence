@@ -13,6 +13,10 @@
 		2745D7A61B24DE9D006C3C2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2745D7A51B24DE9D006C3C2E /* Images.xcassets */; };
 		2745D7A91B24DE9D006C3C2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2745D7A71B24DE9D006C3C2E /* LaunchScreen.xib */; };
 		2745D7B51B24DE9D006C3C2E /* The_LawrenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745D7B41B24DE9D006C3C2E /* The_LawrenceTests.swift */; };
+		2745D7F21B2616F6006C3C2E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2745D7F11B2616F6006C3C2E /* Category.swift */; };
+		27575F711B594FAC00285EF9 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27575F701B594FAC00285EF9 /* ContentViewController.swift */; };
+		27575F731B5AE68500285EF9 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27575F721B5AE68500285EF9 /* PDFViewController.swift */; };
+		27B928DA1B42FCBC00CB3C39 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B928D91B42FCBC00CB3C39 /* CategoriesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		2745D7AE1B24DE9D006C3C2E /* The LawrenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The LawrenceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2745D7B31B24DE9D006C3C2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2745D7B41B24DE9D006C3C2E /* The_LawrenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_LawrenceTests.swift; sourceTree = "<group>"; };
+		2745D7F11B2616F6006C3C2E /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		27575F701B594FAC00285EF9 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		27575F721B5AE68500285EF9 /* PDFViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		27B928D91B42FCBC00CB3C39 /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +85,14 @@
 		2745D79B1B24DE9D006C3C2E /* The Lawrence */ = {
 			isa = PBXGroup;
 			children = (
+				2745D7BE1B24EA2D006C3C2E /* Images */,
 				2745D79E1B24DE9D006C3C2E /* AppDelegate.swift */,
 				2745D7A01B24DE9D006C3C2E /* ViewController.swift */,
 				2745D7A21B24DE9D006C3C2E /* Main.storyboard */,
+				27575F721B5AE68500285EF9 /* PDFViewController.swift */,
+				27575F701B594FAC00285EF9 /* ContentViewController.swift */,
+				2745D7F11B2616F6006C3C2E /* Category.swift */,
+				27B928D91B42FCBC00CB3C39 /* CategoriesViewController.swift */,
 				2745D7A51B24DE9D006C3C2E /* Images.xcassets */,
 				2745D7A71B24DE9D006C3C2E /* LaunchScreen.xib */,
 				2745D79C1B24DE9D006C3C2E /* Supporting Files */,
@@ -110,6 +123,13 @@
 				2745D7B31B24DE9D006C3C2E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2745D7BE1B24EA2D006C3C2E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +181,7 @@
 				TargetAttributes = {
 					2745D7981B24DE9D006C3C2E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9L9L53LLG6;
 					};
 					2745D7AD1B24DE9D006C3C2E = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27575F711B594FAC00285EF9 /* ContentViewController.swift in Sources */,
 				2745D7A11B24DE9D006C3C2E /* ViewController.swift in Sources */,
 				2745D79F1B24DE9D006C3C2E /* AppDelegate.swift in Sources */,
+				27575F731B5AE68500285EF9 /* PDFViewController.swift in Sources */,
+				2745D7F21B2616F6006C3C2E /* Category.swift in Sources */,
+				27B928DA1B42FCBC00CB3C39 /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +361,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "The Lawrence/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "The Lawrence/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +438,7 @@
 				2745D7BA1B24DE9D006C3C2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2745D7BB1B24DE9D006C3C2E /* Build configuration list for PBXNativeTarget "The LawrenceTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +447,7 @@
 				2745D7BD1B24DE9D006C3C2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
